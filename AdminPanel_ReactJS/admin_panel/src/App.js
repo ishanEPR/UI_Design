@@ -1,81 +1,21 @@
 import React from "react";
+import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
+import "./app.css";
 
 function App() {
   return (
     <div>
       <Topbar/>
+      <div className="container">
+        <Sidebar/>
+        <div className="others">
+        otherPages
+        </div>
+      </div>
 
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-
-       test<br/>
-       test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
-      test<br/>
+   
+     
 
     </div>
   );
