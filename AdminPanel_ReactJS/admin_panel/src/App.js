@@ -11,6 +11,7 @@ import {
   Route,
   
 } from "react-router-dom";
+import NewUser from "./pages/newPage/NewUser";
 
 
 
@@ -35,6 +36,12 @@ function App() {
 
             <Route path="/user/:userId">
               <User/>
+
+            </Route>
+
+
+            <Route path="/newUser">
+              <NewUser/>
 
             </Route>
         </Switch>
