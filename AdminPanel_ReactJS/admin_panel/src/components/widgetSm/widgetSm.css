@@ -56,6 +56,6 @@
 }
 
 .widgetSmIcon{
-    font-style: 16px;
+    font-style: 16px !important;
     margin-right: 5px;
 }
