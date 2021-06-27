@@ -109,10 +109,11 @@ export default function User() {
                                 <img  className="userUpdateImg" src="https://writestylesonline.com/wp-content/uploads/2021/02/Michele-Round-Circle-2020.png"
                                     alt=""
                                 />
-                                <label htmlFor="file"><Publish/></label>
+                                <label htmlFor="file"><Publish className="userUpdateIcon" /></label>
                                 <input type="file" id="file" style={{display:"none"}}/>
 
                             </div>
+                            <button className="userUpdateButton">Update</button>
 
 
                         </div>

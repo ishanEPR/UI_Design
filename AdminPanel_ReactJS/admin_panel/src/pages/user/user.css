@@ -104,19 +104,47 @@
 
 .userUpdateTitle{
 
+    font-style: 24px;
+    font-weight: 600;
 }
 
 .userUpdateForm{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
 
 }
 .userUpdateItem{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+}
+.userUpdateItem>label{
+   margin-bottom: 5px;
+   font-size: 14px;
+
 
 }
 .userUpdateInput{
 
+    border: none;
+    width: 250px;
+    border-bottom: 1px solid gray;
+    height: 30px;
+
+}
+.userUpdateRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .userUpdateUpload{
+    display: flex;
+    align-items: center;
+   
 
 }
 .userUpdateImg{
@@ -126,5 +154,19 @@
     object-fit: cover;
     margin-right: 20px;
 
+
+}
+.userUpdateIcon{
+    cursor: pointer;
+}
+.userUpdateButton{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: darkblue;
+    color: white;
+    font-weight:600;
+    
 
 }
