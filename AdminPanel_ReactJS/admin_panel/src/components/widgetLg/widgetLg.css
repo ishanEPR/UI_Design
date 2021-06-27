@@ -36,20 +36,17 @@
 
 }
 
-.widgetLgName{
-
-}
 
 .WidgetLgDate{
+    font-weight: 300;
 
 }
 
 .WidgetLgAmount{
+    font-weight: 300;
 
 }
-.WidgetLgStatus{
 
-}
 
 .WidgetLgButton{
     padding: 5px 7px;
