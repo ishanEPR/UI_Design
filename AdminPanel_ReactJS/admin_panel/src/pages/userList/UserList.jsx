@@ -1,9 +1,19 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "./userList.css";
 import { DataGrid } from '@material-ui/data-grid';
 import {DeleteOutline} from '@material-ui/icons';
+import { userRows } from '../../dummyData';
+import {Link} from 'react-router-dom';
 
 export default function UserList() {
+
+
+    const [data,setData]=useState(userRows);
+
+    const handleDelete= (id)=>{
+        setData(data.filter((item)=>item.id !==id));
+    }
+
     const columns = [
         { field: 'id', headerName: 'ID', width: 100 },
         { field: 'user', headerName: ' User', width: 200, renderCell: (params)=>{
@@ -32,8 +42,12 @@ export default function UserList() {
             renderCell: (params)=>{
                 return(
                     <>
-                        <button className='userListEdit'>Edit</button>
-                        <DeleteOutline className='userListDelete'/>
+                        <Link to={"/user/"+params.row.id}>
+                           <button className='userListEdit'>Edit</button>
+
+                        </Link>
+                      
+                        <DeleteOutline className='userListDelete' onClick={()=> handleDelete(params.row.id)}/>
                     </>
                 )
             }
@@ -41,82 +55,10 @@ export default function UserList() {
 
       ];
       
-      const rows = [
-        { id: 1, 
-            username: 'ishan97', 
-            avater: 'https://writestylesonline.com/wp-content/uploads/2021/02/Michele-Round-Circle-2020.png', 
-            email: 'ishan@gmail.com',
-            status: 'active',
-            transaction: '$120.00',
-         },
-         { id: 2, 
-            username: 'ishan97', 
-            avater: 'https://writestylesonline.com/wp-content/uploads/2021/02/Michele-Round-Circle-2020.png', 
-            email: 'ishan@gmail.com',
-            status: 'active',
-            transaction: '$120.00',
-         },
-         { id: 3, 
-            username: 'ishan97', 
-            avater: 'https://writestylesonline.com/wp-content/uploads/2021/02/Michele-Round-Circle-2020.png', 
-            email: 'ishan@gmail.com',
-            status: 'active',
-            transaction: '$120.00',
-         },
-         { id: 4, 
-            username: 'ishan97', 
-            avater: 'https://writestylesonline.com/wp-content/uploads/2021/02/Michele-Round-Circle-2020.png', 
-            email: 'ishan@gmail.com',
-            status: 'active',
-            transaction: '$120.00',
-         },
-         { id: 5, 
-            username: 'ishan97', 
-            avater: 'https://writestylesonline.com/wp-content/uploads/2021/02/Michele-Round-Circle-2020.png', 
-            email: 'ishan@gmail.com',
-            status: 'active',
-            transaction: '$120.00',
-         },
-         { id: 6, 
-            username: 'ishan97', 
-            avater: 'https://writestylesonline.com/wp-content/uploads/2021/02/Michele-Round-Circle-2020.png', 
-            email: 'ishan@gmail.com',
-            status: 'active',
-            transaction: '$120.00',
-         },
-         { id: 7, 
-            username: 'ishan97', 
-            avater: 'https://writestylesonline.com/wp-content/uploads/2021/02/Michele-Round-Circle-2020.png', 
-            email: 'ishan@gmail.com',
-            status: 'active',
-            transaction: '$120.00',
-         },
-         { id: 8, 
-            username: 'ishan97', 
-            avater: 'https://writestylesonline.com/wp-content/uploads/2021/02/Michele-Round-Circle-2020.png', 
-            email: 'ishan@gmail.com',
-            status: 'active',
-            transaction: '$120.00',
-         },
-         { id: 9, 
-            username: 'ishan97', 
-            avater: 'https://writestylesonline.com/wp-content/uploads/2021/02/Michele-Round-Circle-2020.png', 
-            email: 'ishan@gmail.com',
-            status:'active',
-            transaction: '$120.00',
-         },
-         { id: 10, 
-            username: 'ishan97', 
-            avater: 'https://writestylesonline.com/wp-content/uploads/2021/02/Michele-Round-Circle-2020.png', 
-            email: 'ishan@gmail.com',
-            status:'active',
-            transaction: '$120.00',
-         }
-
-      ];
+      
     return (
         <div className='userList'>
-            <DataGrid rows={rows} disableSelectionOnClick columns={columns} pageSize={5} checkboxSelection />
+            <DataGrid rows={data} disableSelectionOnClick columns={columns} pageSize={8} checkboxSelection />
         
             
         </div>
