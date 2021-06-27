@@ -68,6 +68,7 @@ export default function NewUser() {
                     </select>
 
                 </div>
+                <button className="newUserButton">Create</button>
 
 
 
