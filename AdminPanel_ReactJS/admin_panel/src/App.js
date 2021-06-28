@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import NewUser from "./pages/newPage/NewUser";
 import ProductList from "./pages/productList/ProductList";
+import Product from "./pages/product/Product";
 
 
 
@@ -55,7 +56,7 @@ function App() {
 
 
             <Route path="/product/:productsId">
-              <User/>
+              <Product/>
 
             </Route>
 
