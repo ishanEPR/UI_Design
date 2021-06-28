@@ -127,8 +127,24 @@
 
 .productFormRight{
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 
 }
 .productButton{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: white;
 
+    font-weight: 600;
+
+}
+
+.productUpload{
+    display: flex;
+    align-items: center;
 }
