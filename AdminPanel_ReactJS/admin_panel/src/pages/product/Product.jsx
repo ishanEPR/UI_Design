@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import "./product.css";
 import Chart from "../../components/chart/Chart";
 import { productData } from '../../dummyData';
+import { Publish } from '@material-ui/icons';
 
 export default function Product() {
     return (
@@ -58,7 +59,51 @@ export default function Product() {
                 </div>
 
             </div>
-            <div className="productBottom"></div>
+            <div className="productBottom">
+                <form className="productForm">
+
+                    <div className="productFormLeft">
+                        <label>Product Name</label>
+                        <input type="text" placeholder="Apple Airpods"/>
+                        <label>In Stock</label>
+                        <select name="inStock" id="idStock">
+                            <option  value="yes">Yes</option>
+                            <option  value="no">No</option>
+
+                        </select>
+
+
+                        <label>Active</label>
+                        <select name="active" id="active">
+                            <option  value="yes">Yes</option>
+                            <option  value="no">No</option>
+
+                        </select>
+
+                    </div>
+
+                    <div className="productFormRight">
+                        <div className="productUpload">
+                            <img src="https://images.unsplash.com/photo-1607203391514-b001be773a22?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwbGUlMjBwaG9uZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+                                alt=""
+                                className="productUploadImg"
+                            />
+
+                            <label  for="file">
+                                <Publish/>
+
+                            </label>
+                            <input type="file" id="file" style={{display:'none'}}/>
+
+                        </div>
+                        <button className="productButton">Update</button>
+                       
+
+                    </div>
+
+                </form>
+
+            </div>
             
         </div>
     )
