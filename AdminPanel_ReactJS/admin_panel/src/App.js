@@ -12,6 +12,7 @@ import {
   
 } from "react-router-dom";
 import NewUser from "./pages/newPage/NewUser";
+import ProductList from "./pages/productList/ProductList";
 
 
 
@@ -41,6 +42,25 @@ function App() {
 
 
             <Route path="/newUser">
+              <NewUser/>
+
+            </Route>
+
+
+
+            <Route path="/products">
+              <ProductList/>
+
+            </Route>
+
+
+            <Route path="/product/:productsId">
+              <User/>
+
+            </Route>
+
+
+            <Route path="/newproducts">
               <NewUser/>
 
             </Route>
