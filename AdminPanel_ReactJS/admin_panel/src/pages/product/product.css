@@ -26,6 +26,8 @@
 
 .productTop{
 
+    display: flex;
+
 }
 
 .productBottom{
@@ -33,9 +35,34 @@
 }
 
 .productTopLeft{
+    flex: 1;
 
 }
 
 .productTopRight{
-    
+    flex: 1;
+
+    margin: 20px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 15px -10px #000000; 
+    box-shadow: 0px 0px 15px -10px #000000;
+}
+.productInfoImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.productInfoTop{
+
+}
+.productInfoBottom{
+
+}
+.productName{
+
+}
+.productInfoItem{
+
 }
