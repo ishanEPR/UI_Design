@@ -23,8 +23,8 @@ export default function WidgetLg() {
                         <img src="https://writestylesonline.com/wp-content/uploads/2021/02/Michele-Round-Circle-2020.png" alt="" className="widgetLgImg"/>
                         <span className="widgetLgName">Ishan Reshmika</span>
                     </td>
-                    <td className="WidgetLgDate">30 March 2021</td>
-                    <td className="WidgetLgAmount">$122.00</td>
+                    <td className="WidgetLgDate">30 Jun 2021</td>
+                    <td className="WidgetLgAmount">Rs 122.00</td>
                     <td className="WidgetLgStatus">
                         <Button type="Approved"/>
                     </td>
@@ -35,10 +35,10 @@ export default function WidgetLg() {
                 <tr className="WidgetLgTr">
                     <td className="WidgetLgUser">
                         <img src="https://writestylesonline.com/wp-content/uploads/2021/02/Michele-Round-Circle-2020.png" alt="" className="widgetLgImg"/>
-                        <span className="widgetLgName">Ishan Reshmika</span>
+                        <span className="widgetLgName">Anuki De Alwis</span>
                     </td>
-                    <td className="WidgetLgDate">30 March 2021</td>
-                    <td className="WidgetLgAmount">$122.00</td>
+                    <td className="WidgetLgDate">30 Jun 2021</td>
+                    <td className="WidgetLgAmount">Rs 122.00</td>
                     <td className="WidgetLgStatus">
                         <Button type="Declined"/>
                     </td>
@@ -48,10 +48,10 @@ export default function WidgetLg() {
                 <tr className="WidgetLgTr">
                     <td className="WidgetLgUser">
                         <img src="https://writestylesonline.com/wp-content/uploads/2021/02/Michele-Round-Circle-2020.png" alt="" className="widgetLgImg"/>
-                        <span className="widgetLgName">Ishan Reshmika</span>
+                        <span className="widgetLgName">Sanduni Fernando</span>
                     </td>
-                    <td className="WidgetLgDate">30 March 2021</td>
-                    <td className="WidgetLgAmount">$122.00</td>
+                    <td className="WidgetLgDate">30 Jun 2021</td>
+                    <td className="WidgetLgAmount">Rs 122.00</td>
                     <td className="WidgetLgStatus">
                         <Button type="Pending"/>
                     </td>
@@ -61,10 +61,10 @@ export default function WidgetLg() {
                 <tr className="WidgetLgTr">
                     <td className="WidgetLgUser">
                         <img src="https://writestylesonline.com/wp-content/uploads/2021/02/Michele-Round-Circle-2020.png" alt="" className="widgetLgImg"/>
-                        <span className="widgetLgName">Ishan Reshmika</span>
+                        <span className="widgetLgName">Chamodhi Satharasinghe</span>
                     </td>
-                    <td className="WidgetLgDate">30 March 2021</td>
-                    <td className="WidgetLgAmount">$122.00</td>
+                    <td className="WidgetLgDate">30 Jun 2021</td>
+                    <td className="WidgetLgAmount">Rs 122.00</td>
                     <td className="WidgetLgStatus">
                         <Button type="Approved"/>
                     </td>
